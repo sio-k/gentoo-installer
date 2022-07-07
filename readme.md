@@ -16,7 +16,9 @@ theory of it: see gentoo install alternatives: installing from an existing linux
 theoretical way of doing things
 -----------
 
-1. boot into separate tiny debian on a small extra partition
+0. boot into separate tiny debian (or, more preferably netbsd) on a small extra partition
+	- ideally, this would be booted using PXE and reside entirely in RAM
+1. point ansible at the machine, telling it the desired passwords (or to keep existing ones by keeping /etc/shadow and /etc/passwd)
 2. mount /home into /mnt/home
 3. run installer script from installer directory in /mnt/home, which does:
 	1. pave over the OS partition (reformat)
