@@ -234,3 +234,8 @@ generated-wrappers/
 bin/
 build/
 plugins/
+
+
+# Added by cargo
+
+/target

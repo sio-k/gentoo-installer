@@ -37,3 +37,5 @@ installer scripts are separated by host, all sitting in a single git repo
 
 - basic thing doesn't have to be a shellscript, could be a C++ program with proper error handling and error reporting?
 - secondary could be a C++ program?
+
+Call me crazy, but I think this might actually benefit from being written in Rust or Zig. I don't care about the performance details nearly as much as I just care about it being a nice, statically compiled binary I can just run. And I'd like it to not segfault or otherwise misbehave. And I'd like to be able to use libraries that don't suck, but that just gets me back to C, doesn't it? Or Haskell, I guess.
