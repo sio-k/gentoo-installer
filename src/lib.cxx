@@ -1,7 +1,3 @@
-#include <assert.h>
-#include <unistd.h>
-#include <stdlib.h>
-
 // all the stuff an installer needs
 struct InstData {
 	// NOTE: bootloader is always installed to /dev/sda and /dev/nvme0n1
@@ -20,8 +16,6 @@ InstData data_games = {
 	// TODO: read /etc/portage/make.conf at build time?
 	// TODO
 };
-// explicitly specify linkage
-extern InstData data_games;
 
 /*
 pub let data_work = InstData {

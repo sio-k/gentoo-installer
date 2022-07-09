@@ -1,9 +1,3 @@
-#include "../lib/lib.h"
-
-#include <string>
-#include <assert.h>
-#include <stdio.h>
-
 void prepare() {
 	shell("mkdir -p /mnt/home");
 	shell("mkdir -p /mnt/gentoo");
