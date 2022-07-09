@@ -41,3 +41,15 @@ installer scripts are separated by host, all sitting in a single git repo
 - secondary could be a C++ program?
 
 Call me crazy, but I think this might actually benefit from being written in Rust or Zig. I don't care about the performance details nearly as much as I just care about it being a nice, statically compiled binary I can just run. And I'd like it to not segfault or otherwise misbehave. And I'd like to be able to use libraries that don't suck, but that just gets me back to C, doesn't it? Or Haskell, I guess.
+
+TODOs
+-----
+
+- installer script that, roughly in order:
+	- mounts installer partition somewhere in /media
+	- copies built executable to it's root
+	- writes machine name to installer's /machinename
+	- writes desired stage3 to it's root
+	- unmounts the installer partition
+- primary installer
+- secondary installer
