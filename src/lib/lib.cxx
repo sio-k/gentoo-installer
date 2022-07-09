@@ -12,14 +12,16 @@ struct InstData {
 	char const* make_conf;
 };
 
-pub let data_games = InstData {
+InstData data_games = {
 	"/dev/nvme0n1p2",
 	"9747e99a-603d-4602-b71d-052799fd47cb",
-	"btrfs"
+	"btrfs",
 	nullptr,
 	// TODO: read /etc/portage/make.conf at build time?
 	// TODO
-}
+};
+// explicitly specify linkage
+extern InstData data_games;
 
 /*
 pub let data_work = InstData {

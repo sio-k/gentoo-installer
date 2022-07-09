@@ -45,6 +45,12 @@ Call me crazy, but I think this might actually benefit from being written in Rus
 TODOs
 -----
 
+- buildscript
+	- uses clang
+	- Gnu++17 with C99 extensions
+	- produces a single, statically-linked binary
+	- statically linked libc, libc++
+	- use musl or actually portable executable format to achieve this, don't care as long as it works
 - installer script that, roughly in order:
 	- mounts installer partition somewhere in /media
 	- copies built executable to it's root
