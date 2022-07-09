@@ -22,6 +22,8 @@ void prepare() {
 
 	shell("mount --types proc /proc /mnt/gentoo/proc");
 
+	// TODO: select portage profile as a recent desktop/systemd profile (preferably without plasma or much else that takes ages to build)
+
 	shell("mount --rbind /sys /mnt/gentoo/sys");
 	shell("mount --make-rslave /mnt/gentoo/sys");
 
@@ -52,6 +54,8 @@ void primary(bool keep_previous_passwords = false) {
 		user_password = buf;
 		memset(buf, 0, 257);
 	}
+
+	shell("emerge-webrsync");
 
 	// TODO
 }
