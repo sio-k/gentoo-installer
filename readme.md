@@ -59,3 +59,19 @@ TODOs
 	- unmounts the installer partition
 - primary installer
 - secondary installer
+	- install desired packages
+	- add user with desired password and all groups
+	- pave in dotfiles
+		- .tmux.conf
+		- .alacritty.yml
+		- .zsh*
+		- .zgen-setup
+		- .config/micro/*
+		- .config/i3/*
+	- set up shell
+	- set up password, ensuring weak passwords are allowed (change "everyone" to "users" in /etc/security/passwdqc.conf)
+
+Notes
+-----
+
+- my minimal gentoo system is ~12GB in size. Installer OSs that ought to run gentoo should be at least that large. Otherwise, consider netbsd (<1GB) or debian (2.3GB)
