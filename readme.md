@@ -58,7 +58,10 @@ TODOs
 	- writes desired stage3 to it's root
 	- unmounts the installer partition
 - primary installer
+	- try to get around using the STL so things compile fastish
+	- fstab writing thing
 - secondary installer
+	- try to get around using the STL so things compile fastish
 	- install desired packages
 	- add user with desired password and all groups
 	- pave in dotfiles
@@ -70,6 +73,7 @@ TODOs
 		- .config/i3/*
 	- set up shell
 	- set up password, ensuring weak passwords are allowed (change "everyone" to "users" in /etc/security/passwdqc.conf)
+- switch from shelling out to syscalls -> improved error messages, more possible error handling
 
 Notes
 -----
