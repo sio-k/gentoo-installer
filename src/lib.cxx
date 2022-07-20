@@ -2,6 +2,7 @@
 struct InstData {
 	// NOTE: bootloader is always installed to /dev/sda and /dev/nvme0n1
 	char const* os_part_path; // /dev/bla
+	char const* home_part_path;
 	char const* home_part_uuid;
 	char const* home_part_fstype;
 	char const* swap_part_uuid;
@@ -10,6 +11,7 @@ struct InstData {
 
 InstData data_games = {
 	"/dev/nvme0n1p2",
+	"/dev/nvme0n1p3",
 	"9747e99a-603d-4602-b71d-052799fd47cb",
 	"btrfs",
 	nullptr,
@@ -31,7 +33,7 @@ pub let data_w500 = InstData {
 }
 */
 
-void shell(char const* run)
+void shell(char const* run, int retcode = 0)
 {
-	assert(system(run));
+	assert(retcode == system(run));
 }
